@@ -32,13 +32,25 @@
 body{
     min-width: 700px;
     min-height: 400px;
+    /* background-image: url("/assets/img/grasshopper.png");
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: bottom; */
 }
 /* Cabeçalho */
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
 header#header_page{
     padding-top: 0.7rem;
     height: 2rem;
     background-color: var(--cor_principal);
 }
+
 nav#nav_header_top{
     display: flex;
     justify-content: end;
@@ -73,11 +85,13 @@ hr.hr_right_left{
     border-style: none;
 }
 main#main_page{
+    margin-top: 2rem;
     background-image: url("/assets/img/grasshopper.png");
     background-size: 10rem;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position-x: right;
-    background-position-y: bottom;
+    background-position-y: calc(100vh - 9.7rem);
 }
 .main_page_sections{
     height: calc(100vh - 6rem);
