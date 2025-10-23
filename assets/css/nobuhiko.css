@@ -31,12 +31,6 @@
 body{
     min-width: 700px;
     min-height: 400px;
-    /* background-image: url("/assets/img/grasshopper.png");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: right;
-    background-position-y: bottom; */
 }
 /* Cabeçalho */
 header{
@@ -95,7 +89,7 @@ main#main_page{
     background-position-x: right;
     background-position-y: calc(100vh - 9.8rem);
 }
-.main_page_sections{
+section[id]{
     height: calc(100vh - 6rem);
 }
 section#div_main_page{
@@ -104,6 +98,10 @@ section#div_main_page{
     justify-content: space-around;
     width: 90vw;
     margin: auto;
+}
+section#div_main_contacts form{
+    display: grid;
+    grid-template-columns: repeat(1, 12fr) ;
 }
 #imagem_principal{
     border-radius: 15px;
@@ -119,6 +117,9 @@ footer#footer_page{
 }
 footer.msg_footer{
     display: flex;
+}
+form{
+    margin: auto;
 }
 @media screen and (max-width: 870px){
     main > section > h1 {
