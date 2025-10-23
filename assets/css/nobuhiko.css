@@ -100,8 +100,30 @@ section#div_main_page{
     margin: auto;
 }
 section#div_main_contacts form{
-    display: grid;
-    grid-template-columns: repeat(1, 12fr) ;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+}
+input[type='text']{
+    border-radius: 15px;
+    box-shadow: 5px 2px 15px var(--cor_auxiliar2);
+    height: 2rem;
+    padding: 0.5rem;
+}
+input[type='submit'], input[type='reset']{
+    border-radius: 15px;
+    box-shadow: 5px 2px 15px var(--cor_auxiliar2);
+    height: 1.5rem;
+    width: 5rem;
+}
+textarea{
+    border-radius: 15px;
+    box-shadow: 5px 2px 15px var(--cor_auxiliar2);
+    height: 5rem;
+    padding: 0.5rem;
 }
 #imagem_principal{
     border-radius: 15px;
