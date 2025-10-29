@@ -80,24 +80,38 @@ hr.hr_right_left{
     background: linear-gradient(to left, var(--cor_secundaria) 30%, var(--cor_principal) 70%);
     border-style: none;
 }
-main#main_page{
-    margin-top: 2rem;
-    background-image: url("/assets/img/grasshopper.png");
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: right;
-    background-position-y: calc(100vh - 9.8rem);
+/* main#main_page{*/
+img#logo_page{
+    z-index: 100;
+    width: auto;
+    height: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+    position: fixed;
+    right: 1rem;
+    bottom: 3.5rem;
+}
+main section.impar{
+    background: radial-gradient(circle, var(--cor_auxiliar3) 0% , var(--cor_auxiliar2) 50% , var(--cor_auxiliar1) 100%);
+}
+main section.par{
+    background: radial-gradient(circle, var(--cor_auxiliar1) 0% , var(--cor_auxiliar2) 50% , var(--cor_auxiliar3) 100%);
 }
 section[id]{
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 2rem);
+    padding-top: 2rem;
+}
+section[id]:last-child{
+        height: calc(100vh - 6rem);
+}
+.div_main_page{
+    width: 90vw;
+    margin: auto;
 }
 section#div_main_page{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 90vw;
-    margin: auto;
 }
 section#div_main_contacts form{
     width: 400px;
@@ -140,12 +154,12 @@ footer#footer_page{
 footer.msg_footer{
     display: flex;
 }
-form{
-    margin: auto;
-}
 @media screen and (max-width: 870px){
     main > section > h1 {
         font-size: 30px;
+    }
+    *{
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 710px){

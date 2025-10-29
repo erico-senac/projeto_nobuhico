@@ -24,29 +24,33 @@
         <hr class="hr_left_right">
     </header>
     <!-- Conteúdo principal da página -->
+        <img id="logo_page" src="./assets/img/grasshopper.png" alt="Imagem de um grasshopper">
     <main id="main_page">
-        <section id="div_main_page" class="main_page_sections">
-            <img id="imagem_principal" src="./assets/img/download.jpg" alt="Imagem de Nobuhiko">
-            <h1 class="playwrite-de-sas-400">Página Pessoal do Nobuhico</h1>
-        </section>
-        <hr class="hr_right_left">
-        <section id="div_main_contacts" class="main_page_sections">
-            <h1 class="playwrite-de-sas-400">Contatos</h1>
-            <form>
-                <label for="input_nome">Nome</label>
-                <input type="text" name="nome" id="input_nome" placeholder="Seu nome aqui">
-                <label for="input_mensage">Mensagem</label>
-                <textarea name="texto" id="input_mensage" placeholder="Sua mensagem aqui"></textarea>
-                <div id="comandos">
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Cancelar">
-                </div>
-            </form>
-        </section>
-        <hr class="hr_left_right">
-        <section id="articles">
-            <img src="./assets/img/page.jpg" width="25%" >
-        </section>
+        <div class="div_main_page">          
+            <section id="div_main_page" class="main_page_sections impar">
+                <img id="imagem_principal" src="./assets/img/download.jpg" alt="Imagem de Nobuhiko">
+                <h1 class="playwrite-de-sas-400">Página Pessoal do Nobuhico</h1>
+            </section>
+            <hr class="hr_right_left" >
+            <section id="articles" class="main_page_articles par">
+                <h1 class="playwrite-de-sas-400">Artigos</h1>
+                <img src="./assets/img/page.jpg" width="25%" >
+            </section>
+            <hr class="hr_left_right">        
+            <section id="div_main_contacts" class="main_page_sections impar">
+                <h1 class="playwrite-de-sas-400">Contatos</h1>
+                <form>
+                    <label for="input_nome">Nome</label>
+                    <input type="text" name="nome" id="input_nome" placeholder="Seu nome aqui">
+                    <label for="input_mensage">Mensagem</label>
+                    <textarea name="texto" id="input_mensage" placeholder="Sua mensagem aqui"></textarea>
+                    <div id="comandos">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Cancelar">
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
     <!-- Rodapé da página -->
     <hr class="hr_left_right">
