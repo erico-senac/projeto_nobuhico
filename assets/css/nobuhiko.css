@@ -102,7 +102,7 @@ section[id]{
     padding-top: 2rem;
 }
 section[id]:last-child{
-        height: calc(100vh - 6rem);
+    height: calc(100vh - 6rem);
 }
 .div_main_page{
     width: 90vw;
