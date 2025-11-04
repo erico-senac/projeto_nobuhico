@@ -39,14 +39,16 @@
             <hr class="hr_left_right">        
             <section id="div_main_contacts" class="main_page_sections impar">
                 <h1 class="playwrite-de-sas-400">Contatos</h1>
-                <form>
+                <form method="post" action="mailto:profericocosta@gmail.com">
                     <label for="input_nome">Nome</label>
                     <input type="text" name="nome" id="input_nome" placeholder="Seu nome aqui">
+                    <label for="input_email">e-mail</label>
+                    <input type="email" name="input_email" id="input_email" placeholder="seunome@provedor.com.br">
                     <label for="input_mensage">Mensagem</label>
                     <textarea name="texto" id="input_mensage" placeholder="Sua mensagem aqui"></textarea>
                     <div id="comandos">
                         <input type="submit" value="Enviar">
-                        <input type="reset" value="Cancelar">
+                        <input type="reset" value="Cancelar" class="btn btn_cancel">
                     </div>
                 </form>
             </section>
