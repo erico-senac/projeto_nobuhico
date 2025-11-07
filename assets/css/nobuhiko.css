@@ -104,9 +104,20 @@ section[id]{
 section[id]:last-child{
     height: calc(100vh - 6rem);
 }
+/* continuar daqui */
 .div_main_page{
     width: 90vw;
     margin: auto;
+}
+.main_page_publishes{
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: inherit;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-items: center;
 }
 section#div_main_page{
     display: flex;
@@ -145,6 +156,31 @@ textarea{
     max-height: 100%;
     max-width: 100%;
     height: auto;
+}
+:root{
+    --hue_base: 0;
+    --saturation_base: 23%;
+    --ligth-base: 94%;
+    --alpha-base: 0.234;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 17rem;
+    border-style: outset;
+    border-radius: 1rem;
+    background-color: hsla(var(--hue_base), var(--saturation_base), var(--ligth-base), var(--alpha-base));
+}
+.pub{
+    padding: 0.5rem;
+    border-style: none;
+    --alpha-base: 0.3;
+    font-size: 0.8rem;
+}
+.pub > img{
+    border-radius: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 /* Rodapé */
 footer#footer_page{
