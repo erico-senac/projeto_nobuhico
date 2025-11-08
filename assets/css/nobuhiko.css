@@ -26,6 +26,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+    
+}
+a:focus{
+    background-color: var(--cor_auxiliar2);
+}
+a:hover{
+    background-color: var(--cor_principal);
 }
 /* verificar por que não funcionou */
 body{
@@ -64,6 +79,8 @@ a.nav_menu_top_item{
 a.nav_menu_top_item:hover{
     color: #fff;
     background-color: #000;
+    border-bottom: solid 0.2rem var(--cor_auxiliar3);
+    transition: all cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s;
 }
 a.nav_menu_top_item[href="#"]:hover{
     color: #000;
@@ -181,6 +198,8 @@ textarea{
 .pub > img{
     border-radius: 0.5rem;
     margin-bottom: 0.3rem;
+    width: 180px;
+    height: 230px;
 }
 /* Rodapé */
 footer#footer_page{
@@ -199,6 +218,24 @@ footer.msg_footer{
     --cor_auxiliar2: #484431;
     --cor_auxiliar3: #30362a;
 }
+@media screen and (max-width: 1120px) {
+    .main_page_publishes{
+        grid-template-columns: repeat(4,1fr);
+        height: fit-content;
+        gap: 0.3rem
+    }
+    .pub{
+        font-size: 0.5rem;
+    }
+    .pub > img{
+        width: 140px;
+        height: 160px;
+    }
+    .card{
+        width: 8rem;
+        height: 12rem;
+    }    
+}
 @media screen and (max-width: 870px){
     main > section > h1 {
         font-size: 30px;
@@ -211,8 +248,11 @@ footer.msg_footer{
         max-height: 6rem;
     }
     #imagem_principal{
-        max-width: 8rem;
-        max-height: 8rem;
+        max-width: 10rem;
+        max-height: 10rem;
+    }
+    .main_page_publishes{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media screen and (max-width: 710px){
@@ -227,4 +267,8 @@ footer.msg_footer{
         max-width: 6rem;
         max-height: 6rem;
     }
+    .main_page_publishes{
+        grid-template-columns: repeat(3,1fr);
+        gap:0.3rem
+    }    
 }
