@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal de Nobuhiko</title>
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./assets/css/nobuhiko.css">
     <link rel="stylesheet" href="./assets/css/all.css">
 </head>
@@ -24,7 +25,7 @@
         <hr class="hr_left_right">
     </header>
     <!-- Conteúdo principal da página -->
-    <img id="logo_page" src="./assets/img/grasshopper.png" alt="Imagem de um grasshopper">
+    <img class="esconde" id="logo_page" src="./assets/img/grasshopper.png" alt="Imagem de um grasshopper">
     <main id="main_page">
         <div class="div_main_page">          
             <section id="div_main_page" class="main_page_sections impar">
@@ -32,9 +33,18 @@
                 <h1 class="playwrite-de-sas-400">Página Pessoal do Nobuhico</h1>
             </section>
             <hr class="hr_right_left" >
-            <section id="articles" class="main_page_articles par">
+            <section id="articles" class="par">
                 <h1 class="playwrite-de-sas-400">Artigos</h1>
-                <img src="./assets/img/page.jpg" width="25%" >
+                <div class="main_page_articles" >
+                    <dl>
+                        <dt>História do Nobuiko</dt>
+                        <dd><a target="_blank" href="http://www.guiadosquadrinhos.com/personagem/shadow-moon-(nobuhiko-akizuki)/17598">http://www.guiadosquadrinhos.com/personagem/shadow-moon-(nobuhiko-akizuki)/17598</a></dd>
+                        <dt>Reboot de Kamen Raider Black Sun</dt>
+                        <dd><a target="_blank" href="https://www.jbox.com.br/2021/04/03/kamen-rider-black-sun-toei-anuncia-reboot-da-serie-classica-para-2022/">https://www.jbox.com.br/2021/04/03/kamen-rider-black-sun-toei-anuncia-reboot-da-serie-classica-para-2022/</a></dd>
+                        <dt>Winkpedia</dt>
+                        <dd><a target="_blank" href="https://pt.wikipedia.org/wiki/Kamen_Rider_Black">https://pt.wikipedia.org/wiki/Kamen_Rider_Black</a></dd>
+                    </dl>
+                </div>
             </section>
             <hr class="hr_left_right"> 
             <section id="publishes" class="impar">
@@ -121,13 +131,12 @@
                             <a href="https://img.elo7.com.br/product/zoom/4B4DAB1/roborider-kamen-rider-black-rx-henshin-hero.jpg">Download</a>
                         </span>
                     </div>
-
                 </div>
             </section>
             <hr class="hr_right_left">
             <section id="div_main_contacts" class="main_page_sections par">
                 <h1 class="playwrite-de-sas-400">Contatos</h1>
-                <form method="get" action="https://wa.me/5586988068448/">
+                <form class="form-control" method="get" action="https://wa.me/5586988068448/">
                     <label for="input_nome">Nome</label>
                     <input type="text" name="nome" id="input_nome" placeholder="Seu nome aqui">
                     <label for="input_email">e-mail</label>
@@ -135,8 +144,8 @@
                     <label for="input_mensage">Mensagem</label>
                     <textarea name="texto" id="input_mensage" placeholder="Sua mensagem aqui"></textarea>
                     <div id="comandos">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Cancelar" class="btn btn_cancel">
+                        <input type="submit" value="Enviar" class="btn-primary">
+                        <input type="reset" value="Cancelar" class="btn-danger">
                     </div>
                 </form>
             </section>
@@ -152,4 +161,5 @@
 </body>
 <script src="./assets/js/all.js"></script>
 <script src="./assets/js/nobuhiko.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
 </html>
