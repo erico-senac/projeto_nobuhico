@@ -1,8 +1,5 @@
-const h1_pg_main = document.querySelector('#div_main_page h1');
 const logo = document.querySelector('#logo_page')
 const nav_top = document.querySelector('#header_page');
-
-h1_pg_main.textContent = "Vamos para casa?"
 
 logo.addEventListener('click', () => {
     window.scrollTo(0,0);
@@ -26,10 +23,30 @@ const mostra_glasshoper = () => {
     }
 }
 
+window.addEventListener('keydown',(key) => {
+    console.log(key.key);
+})
+
+const sessoes = document.querySelectorAll('main section')
+const marcaMenuAtivo = () => {
+    const pontoCheck = window.scrollY + (window.innerHeight / 2);
+    sessoes.forEach(sessao => {
+        const sessaoTop = sessao.offsetTop;
+        const sessaoHeigth = sessao.offsetHeight;
+        const sessaoID = sessao.getAttribute('id');
+        const checkInicio =  pontoCheck >= sessaoTop;
+        const checkFim = pontoCheck <= sessaoTop + sessaoHeigth;
+        const sessaoAtiva = document.querySelector(`nav ul li a[href*=${sessaoID}]`);
+        if(checkInicio && checkFim){
+            sessaoAtiva.classList.add('ativa');
+        } else {
+            sessaoAtiva.classList.remove('ativa');
+        }
+    });
+}
+
 window.addEventListener('scroll', () => {
     tela(); 
     mostra_glasshoper();
-})
-window.addEventListener('keydown',(key) => {
-    console.log(key.key);
+    marcaMenuAtivo();
 })

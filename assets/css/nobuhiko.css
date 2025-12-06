@@ -30,11 +30,16 @@
     box-sizing: border-box;
     color: var(--cor_auxiliar5);
 }
-body{
+html{
     scroll-behavior: smooth;
 }
 .esconde{
     display: none;
+}
+.ativa{
+    background-color: var(--cor_auxiliar4);
+    border-bottom-color: var(--cor_auxiliar3);
+    border-bottom-style: solid;
 }
 a{
     text-decoration: none;
